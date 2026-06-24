@@ -18,9 +18,9 @@ Diagrams carry the structure; prose explains the *why*.
 
 ## The problem: you can't search a picture with words
 
-Pokémon card databases are great at metadata — name, set, rarity, the rules text. They know
+Pokémon card APIs and databases are great at metadata — name, set, rarity, the rules text. They know
 nothing about what the *art* shows. So you can find every card called "Pikachu", but you
-cannot find *the one where Pikachu is curled up asleep in the rain*. The picture is the whole
+cannot find *the one where Pikachu is standing in a forest*. The picture is the whole
 appeal, and it's invisible to search.
 
 This started as a genuinely unreasonable personal quest. I'm hunting one specific card —
