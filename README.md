@@ -24,13 +24,18 @@ cannot find *the one where Pikachu is curled up asleep in the rain*. The picture
 appeal, and it's invisible to search.
 
 This started as a genuinely unreasonable personal quest. I'm hunting one specific card —
-Detective Pikachu #098/SV-P — and somewhere down that rabbit hole I realised the thing I
-actually wanted didn't exist: a way to search cards by their illustration. So I built it. 💅
+Detective Pikachu #098/SV-P — and somewhere down that rabbit hole I realised the problem
+wasn't just mine.
+
+Collectors build *themed* binders. We collect by all sorts of rules: a **species collection**
+(one Pokémon, every card it appears on), the **michi method**, or a **vibe collection** grouped
+by mood or scene — sleepy Pokémon, Pokémon eating, Pokémon in cities. Every one of those means
+searching by what the art *shows*, and no card database lets you. So I built it. 💅
 
 | Search by | What it finds | What it misses |
 |---|---|---|
 | Name / text *(every card database)* | "Pikachu", "Charizard", the rules text | anything about the picture |
-| Art *(Full Art)* | "pokemon sleeping", "pikachu in the rain", "two pokemon sharing food" | nothing — that's the point |
+| Art *(Full Art)* | "sleepy pokemon", "pokemon eating", "pokemon in a city" | nothing — that's the point |
 
 > **A quick mental model.** If you've used image search, you're close: type what you want,
 > get matching pictures. But Full Art doesn't compare pixels or hunt for *visually similar*
@@ -245,21 +250,6 @@ Honest current state and near-term direction:
 - **done:** ingestion is live and idempotent, the threshold search API is live, and the holographic gallery is wired to it — including a Tinder-style swipe on each card (♥ to save, ✕ to skip) and a client-side favourites view.
 - **next:** deploy publicly (launching July 2026) and grow the catalogue set-by-set beyond the full-art subset.
 - **later:** a richer manual-tags review pass for cameo-heavy cards, and set / type filters on top of the art search.
-
----
-
-## Keeping the docs honest
-
-The most common documentation failure isn't bad writing ✦ it's drift. Code changes, the docs
-don't, and six months later the architecture page describes a system that no longer exists.
-
-So I treat the architecture doc as a living document with one rule: the Mermaid diagrams are
-the source of truth for the system's shape, and every architectural decision — *including the
-ones I reversed* — gets a dated row in a decision log. When I dropped Pinecone, raised the
-image detail, or reworked search from top-10 to threshold-based, each became a logged line with
-its rationale. The log is the honest history of the build, not a tidy after-the-fact story.
-
-It encodes a value I care about: documentation is part of the work, not a trailing task.
 
 ---
 
