@@ -14,7 +14,7 @@ Diagrams carry the structure; prose explains the *why*.
 
 ---
 
-![Full Art demo — typing a plain-English query and watching matching cards fan out across a holographic gallery](./images/demo.gif)
+![Full Art demo — typing a plain-English query and watching matching cards fan out across a holographic gallery](./images/demo.png)
 
 ## The problem: you can't search a picture with words
 
