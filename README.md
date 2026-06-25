@@ -1,4 +1,4 @@
-# Full Art ✦ a case study
+# Learning about Computer Vision ✦ a case study
 
 This is the system behind **Full Art**, a search engine for Pokémon card *artwork*. You
 describe what you want to see — *"pikachu in the rain"*, *"something sleeping"*, *"a pokemon
